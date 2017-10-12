@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  rabbitmq:
+    host: salamander.rmq.cloudamqp.com
+    username: dfvkhzrk
+    virtual-host: dfvkhzrk
+    password: z0DHJZxoxCoI9GLeJzdkFfLZ7EVOkMsB
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  security:
+    enabled: false
