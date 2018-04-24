@@ -2,4 +2,4 @@ server:
   port: 8085
 
 
-test.val: "changed123"
+test.val: "olololol"
