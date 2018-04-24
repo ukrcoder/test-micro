@@ -1,2 +1,11 @@
 server:
   port: 8082
+
+spring.cloud.stream.bindings:
+  input:
+    destination: table
+    group: table
+    consumer:
+      partitioned: false
+      instanceCount: 1
+      instanceIndex: 0

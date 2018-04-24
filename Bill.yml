@@ -1,2 +1,11 @@
 server:
   port: 8084
+
+spring.cloud.stream.bindings:
+  input:
+    destination: bill
+    group: bill
+    consumer:
+      partitioned: false
+      instanceCount: 1
+      instanceIndex: 0
